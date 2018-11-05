@@ -15,7 +15,7 @@ public class PTra05_04 {
 		/*
 		 * 以下のプログラムは未完成です。
 		 * ★ 下記の仕様に合わせて、プログラムを修正してください
-		 * 
+		 *
 			 *
 		 * ●2～6まで、それぞれ火曜～土曜を出力するようにしてください
 		 * ●0～6以外が入力された場合は①に戻るようにしてください
@@ -24,46 +24,54 @@ public class PTra05_04 {
 		 */
 
 		// ①
-		System.out.println("0～6の整数を入力してください");
+		boolean week = false;
+		while (week == false) {
+			System.out.println("0～6の整数を入力してください");
 
-		String line = scanner.nextLine();
+			String line = scanner.nextLine();
 
-		switch(line) {
+			switch (line) {
 			case "0":
 				System.out.println("日曜");
+
+				System.out.println("システムを終了します。");
+				week = true;
 				break;
 			case "1":
 				System.out.println("月曜");
+				week = true;
+				System.out.println("システムを終了します。");
 				break;
 			case "2":
 				System.out.println("火曜");
+				week = true;
+				System.out.println("システムを終了します。");
 				break;
 			case "3":
 				System.out.println("水曜");
+				week = true;
+				System.out.println("システムを終了します。");
 				break;
 			case "4":
 				System.out.println("木曜");
+				week = true;
+				System.out.println("システムを終了します。");
 				break;
 			case "5":
 				System.out.println("金曜");
+				week = true;
+				System.out.println("システムを終了します。");
 				break;
 			case "6":
 				System.out.println("土曜");
-				break;
-		default:
-			System.out.println("0～6の整数を入力してください");
-			
-					      
 
-		
-		
-		
-		
+				System.out.println("システムを終了します。");
+				break;
+			default:
+				week = false;
+
+			}
 		}
 	}
+
 }
-
-				
-				
-
-	
